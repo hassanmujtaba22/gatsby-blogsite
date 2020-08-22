@@ -1,0 +1,10 @@
+.footer{
+    height: 5vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-weight: bold;
+}
