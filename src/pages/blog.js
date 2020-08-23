@@ -1,18 +1,16 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout/Layout";
-import "../components/style/blog.css"
-
 const blog = ({ data: {blogs} }) => {
     return (
         <Layout>
-          <section className="section">
+          <section className="section-blog row p-5">
             {blogs.nodes.map((blog =>{
                 return (
-                  <div className="box" key={blog.id}>
-                    <Link style={{color: "black"}} to={`/blog/${blog.slug}`}>
-                        <h1>{blog.blogTitle}</h1>
-                        <img style={{width: "100%"}} src={blog.blogImage.fluid.src} alt={blog.blogTitle}/>
+                  <div className="box card col-xl-4 col-lg-6 col-md-12 p-2" key={blog.id}>
+                    <Link className="link" to={`/blog/${blog.slug}`}>
+                        <img className="card-img-top" src={blog.blogImage.fluid.src} alt={blog.blogTitle}/>
+                        <h1 class="card-title">{blog.blogTitle}</h1>
                     </Link>
                     </div>
                 )

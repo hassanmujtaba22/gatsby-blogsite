@@ -1,13 +1,12 @@
 import React from 'react'
 import Layout from "../components/layout/Layout"
-function _404() {
+
+function about() {
     return (
         <Layout>
-            <div className="notfound">
-                Page Not Found
-            </div>
+            About
         </Layout>
     )
 }
 
-export default _404
+export default about

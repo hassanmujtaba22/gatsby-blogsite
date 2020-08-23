@@ -1,8 +1,7 @@
 import React from 'react'
-import "./footer.css"
 function Footer() {
     return (
-        <footer className="footer">
+        <footer className="footer px-5 py-2 bg-light">
             Develop by: Hassan Mujtaba
         </footer>
     )
