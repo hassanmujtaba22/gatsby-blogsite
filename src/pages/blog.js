@@ -10,7 +10,7 @@ const blog = ({ data: {blogs} }) => {
                   <div className="box card col-xl-4 col-lg-6 col-md-12 p-2" key={blog.id}>
                     <Link className="link" to={`/blog/${blog.slug}`}>
                         <img className="card-img-top" src={blog.blogImage.fluid.src} alt={blog.blogTitle}/>
-                        <h1 class="card-title">{blog.blogTitle}</h1>
+                        <h1 className="card-title">{blog.blogTitle}</h1>
                     </Link>
                     </div>
                 )
